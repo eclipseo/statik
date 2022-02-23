@@ -278,9 +278,7 @@ package %s
 
 import (
 	"github.com/rakyll/statik/fs"
-)
-
-`, tags, comment, namePackage)
+)`, tags, comment, namePackage)
 	if !fs.IsDefaultNamespace(assetNamespace) {
 		fmt.Fprintf(&qb, `
 const %s = "%s" // static asset namespace
